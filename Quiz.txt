@@ -1,0 +1,2027 @@
+Package Player.java;
+
+public class Player{
+	private String Name;
+	private int Age;
+	private String email;
+	private String City;
+
+	public Player(String name, int age, String email, String city) {
+		super();
+		Name = name;
+		Age = age;
+		this.email = email;
+		City = city;
+	}
+
+	public String getName() {
+		return Name;
+	}
+	public void setName(String name) {
+		Name = name;
+	}
+	public int getAge() {
+		return Age;
+	}
+	public void setAge(int age) {
+		Age = age;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getCity() {
+		return City;
+	}
+	
+public void setCity(String city) {
+		City = city;
+	}
+	@Override
+	public String toString() {
+		return "Player [Name=" + Name + ", Age=" + Age + ", email=" + email + ", City=" + City + "]";
+	}
+}
+
+Package Quastion.java;
+
+import java.util.Scanner;
+public class Quastions {
+	public void start() 
+	{
+	try { 
+		
+		  int lifeline=2;
+		  String correct="";
+		  int response;
+		  int ans;
+		  int audience=1;
+		  int fifty=1;
+		  int amount=20;
+		  Scanner sc=new Scanner(System.in);
+		  System.out.println("Hello Dear! Welcome to Quiz");
+		  System.out.print("Enter player Name: ");
+		  String name = sc.nextLine();
+		  System.out.print("Enter player Age: ");
+		  int age = sc.nextInt();
+		  System.out.print("Enter player E-mail: ");
+		  String email = sc.next();
+		  System.out.print("Enter player City: ");
+		  String City = sc.next();
+		  System.out.println("----------------------------------------------");
+		  System.out.println("----------------------------------------------");
+		  System.out.println("Are you ready to take the Quiz?");
+		  System.out.println("1.yes");
+		  System.out.println("2.no");
+		  response=sc.nextInt();
+		  if(response==1)
+		    {	 
+		    	System.out.println("RULES AND REGULATIONS OF THE QUIZ!!! ");
+				System.out.println("1.The quiz will consist of a series of multiple-choice questions.");
+		    	System.out.println("2.Questions may be based on general knowledge, sports, history, science, or other topics.");		    	
+		    	System.out.println("3.Each correct answer will earn 20 ruppes.");
+				System.out.println("4.There will be no negative marking for incorrect answers.");
+				System.out.println("5.By participating in the quiz, players acknowledge that they have read, understood, and agreed to abide by these rules.");
+	         	System.out.println("6.The quiz is open to above 18 years old age players.");
+	         	System.out.println("!!! All the best !!!");
+	            System.out.println("!!! Let start the quiz !!!");
+	            System.out.println("----------------------------------------------");
+	       	    System.out.println("----------------------------------------------");
+int a=1;
+				System.out.println("Quastion 1");
+				System.out.println("1.What is the extention of to save the java file?");
+				System.out.println("a..java");
+				System.out.println("b. java");
+				System.out.println("c..javaa");
+				System.out.println("d..jaba");
+				System.out.println("e.Do you want to lifelines?");
+				System.out.println("f.Skip the current quastion.");
+		      	     System.out.print("Choose correct answer: "+correct);
+				     correct=sc.next();
+				     if(correct.equals("a"))
+				     {
+				       System.out.println("You win "+amount+" rupees.");
+				       System.out.println("Reaming Lifelinses: "+lifeline);
+				       System.out.println("Go to next quastion");
+				       System.out.println("----------------------------------------------");
+					   System.out.println("----------------------------------------------");
+				     }
+				    else if(correct.equals("e"))
+				     {
+				    	 System.out.println("1.Audience");
+				    	 System.out.println("2.50/50");
+				    	   ans=sc.nextInt();
+				    	   if(ans==1)
+			      	    	  {
+			      	    		System.out.println("Quastion 1");
+			      				System.out.println("1.What is the extention of to save the java file?");
+			      				System.out.println("a..java   60%");
+			      				System.out.println("b. java   10%");
+			      				System.out.println("c..javaa  20%");
+			      				System.out.println("d..jaba   30%");
+			      				lifeline--;
+			      				audience--;
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("a"))
+							     {
+								    System.out.println("You win "+amount+" rupees.");
+							       System.out.println("Reaming Lifelines: "+lifeline);
+							       System.out.println("Go to next quastion");
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.print("Your Winning Amount is: ");
+								     System.out.println(amount-=20);
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0); 
+							     }
+			      	    	 }
+			      	    	else if(ans==2)
+			      	    	{
+			      	    		System.out.println("Quastion 1");
+			      				System.out.println("1.What is the extention of to save the java file?");
+			      				System.out.println("a..java");
+			      				System.out.println("b. java");
+			      				lifeline--;
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("a"))
+							     {
+								       System.out.println("you win "+amount+" rupees.");
+							       System.out.println("Reaming Lifelines: "+lifeline);
+							       System.out.println("Go to next quastion");
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.print("Your Winning Amount is: ");
+								     System.out.println(amount-=20);
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	}      
+				     }else if(correct.equals("f")) {
+				    	 System.out.println("Quastion Skiped");
+				    	 System.out.println("Go to next quastion.");
+				    	 System.out.println("----------------------------------------------");
+						  System.out.println("----------------------------------------------");
+				     }
+		      	      else
+				     {
+				    	 System.out.println("Sorry! wrong answer");
+				    	 System.out.print("Your Winning Amount is: ");
+					     System.out.println(amount-=20);
+				    	 System.out.println("!!! Thank you !!!");
+				    	 System.out.println("----------------------------------------------");
+						 System.out.println("----------------------------------------------");
+				    	 System.exit(0);
+				     }
+int b=2;
+				     System.out.println("Quastion 2");
+				     System.out.println("2.What is the compile keyword in java?");
+				     System.out.println("a.java");
+				     System.out.println("b.javac");
+				     System.out.println("c.javaa");
+				     System.out.println("d.javaf");
+				     System.out.println("e.Do you want to lifelines?");
+				     System.out.println("f.Skip the current quastion.");
+				     System.out.print("Choose correct answer: ");
+				     correct=sc.next();
+				     if(correct.equals("b"))
+				     {
+				     
+				     System.out.print("Your Winning Amount is: ");
+				     System.out.println(amount+=20);
+				     System.out.println("Reaming Lifelines: "+lifeline);
+				     System.out.println("Go to next quastion");
+				     System.out.println("----------------------------------------------");
+					 System.out.println("----------------------------------------------");
+				     }
+				     
+				    	 else if(correct.equals("e"))
+					     {
+				    		 if(lifeline==2)
+				    		 {
+					    	 System.out.println("1.Audience");
+					    	 System.out.println("2.50/50");
+					    	   ans=sc.nextInt();
+					    	   if(ans==1)
+				      	    	  {
+					    		   System.out.println("Quastion 2");
+								     System.out.println("2.What is the compile keyword in java?");
+								     System.out.println("a.java  20% ");
+								     System.out.println("b.javac 60%");
+								     System.out.println("c.javaa 30%");
+								     System.out.println("d.javaf 10%");
+								     lifeline--;
+								     audience--;
+				      				System.out.print("Choose correct answer: ");
+								     correct=sc.next();
+								     if(correct.equals("b"))
+								     {
+								    	 System.out.print("Your Winning Amount is: ");
+									     System.out.println(amount+=20);								    
+									     System.out.println("Reaming Lifelines: "+lifeline);
+								       System.out.println("Go to next quastion");
+								       System.out.println("----------------------------------------------");
+									   System.out.println("----------------------------------------------");
+								     }
+								     else
+								     {
+								    	 System.out.println("Sorry! wrong answer");
+								    	 System.out.println("!!! Thank you !!!");
+								    	 System.out.println("Reaming Lifelines: "+lifeline);
+								    	 System.out.print("Your Winning Amount is: ");
+									     System.out.println(amount);
+								    	 System.out.println("----------------------------------------------");
+										 System.out.println("----------------------------------------------");
+								    	 System.exit(0);
+								     }
+				      	    	 }
+				      	    	else if(ans==2)
+				      	    	{
+				      	    		System.out.println("Quastion 2");
+								     System.out.println("2.What is the compile keyword in java?");
+								     System.out.println("a.java ");
+								     System.out.println("b.javac");
+								     lifeline--;
+								     fifty--;
+				      				System.out.print("Choose correct answer: ");
+								     correct=sc.next();
+								     if(correct.equals("b"))
+								     {
+								    	 System.out.print("Your Winning Amount is: ");
+									     System.out.println(amount+=20);
+								       System.out.println("Reaming Lifelines: "+lifeline);
+								       System.out.println("Go to next quastion");
+								       System.out.println("----------------------------------------------");
+									   System.out.println("----------------------------------------------");
+								     }
+								     else
+								     {
+								    	 System.out.println("Sorry! wrong answer");
+								    	 System.out.println("!!! Thank you !!!");
+								    	 System.out.println("Reaming Lifelines: "+lifeline);
+								    	 System.out.print("Your Winning Amount is: ");
+									     System.out.println(amount);
+								    	 System.out.println("----------------------------------------------");
+										 System.out.println("----------------------------------------------");
+								    	 System.exit(0);
+								     }
+				      	    	}      
+					     }
+				    		 else if(lifeline==1) 
+				    		 {
+				    			 if(audience==1) 
+				    			 {
+				    			 System.out.println("1.Audience ");
+						    		     System.out.println("Quastion 2");
+									     System.out.println("2.What is the compile keyword in java?");
+									     System.out.println("a.java  20% ");
+									     System.out.println("b.javac 60%");
+									     System.out.println("c.javaa 30%");
+									     System.out.println("d.javaf 10%");
+									     lifeline--;
+									     audience--;
+					      				System.out.print("Choose correct answer: ");
+									     correct=sc.next();
+									     if(correct.equals("b"))
+									     {
+									    	 System.out.print("Your Winning Amount is: ");
+										     System.out.println(amount+=20);
+									       System.out.println("Reaming Lifelines: "+lifeline);
+									       System.out.println("Go to next quastion");
+									       System.out.println("----------------------------------------------");
+										   System.out.println("----------------------------------------------");
+									     }
+									     else
+									     {
+									    	 System.out.println("Sorry! wrong answer");
+									    	 System.out.println("!!! Thank you !!!");
+									    	 System.out.println("Reaming Lifelines: "+lifeline);
+									    	 System.out.print("Your Winning Amount is: ");
+										     System.out.println(amount);
+									    	 System.out.println("----------------------------------------------");
+											 System.out.println("----------------------------------------------");
+									    	 System.exit(0);
+									     } 
+				    			 }
+				    			 else if(fifty==1)
+				    			 {
+				    				         System.out.println("2.50/50");
+						      	    		 System.out.println("Quastion 2");
+										     System.out.println("2.What is the compile keyword in java?");
+										     System.out.println("a.java ");
+										     System.out.println("b.javac");
+										     lifeline--;
+										     fifty--;
+						      				System.out.print("Choose correct answer: ");
+										     correct=sc.next();
+										     if(correct.equals("b"))
+										     {
+										    	 System.out.print("Your winning Amount is: ");
+											     System.out.println(amount+=20);
+										       System.out.println("Reaming Lifelines: "+lifeline);
+										       System.out.println("Go to next quastion");
+										       System.out.println("----------------------------------------------");
+											   System.out.println("----------------------------------------------");
+										     }
+										     else
+										     {
+										    	 System.out.println("Sorry! wrong answer");
+										    	 System.out.println("!!! Thank you !!!");
+										    	 System.out.println("Reaming Lifelines: "+lifeline);
+										    	 System.out.print("Your winning Amount is: ");
+											     System.out.println(amount);
+										    	 System.out.println("----------------------------------------------");
+												 System.out.println("----------------------------------------------");
+										    	 System.exit(0);
+										     }  
+				    			 }else {
+				    				 System.out.println(" ");
+				    			 }
+				    			 
+				    		 }
+				     }else if(correct.equals("f")) {
+				    	 System.out.println("Quastion Skiped");
+				    	 System.out.println("Go to next quastion.");
+				    	 System.out.println("----------------------------------------------");
+						  System.out.println("----------------------------------------------");
+				     }
+				    	 else
+					     {
+					    	 System.out.println("Sorry! wrong answer");
+					    	 System.out.println("!!! Thank you !!!");
+					    	 System.out.println("Reaming Lifelines: "+lifeline);
+					    	 System.out.print("Your winning Amount is: ");
+						     System.out.println(amount);
+					    	 System.out.println("----------------------------------------------");
+							 System.out.println("----------------------------------------------");
+					    	 System.exit(0);
+					     }
+int c=3;
+				     System.out.println("Quastion 3");
+				     System.out.println("3.What is print statement in java?");
+				     System.out.println("a.System.out.Println();");
+				     System.out.println("b.system.out.println();");
+				     System.out.println("c.System.out.println();");
+				     System.out.println("d.System.Out.println();");
+				     System.out.println("e.Do you want to lifelines?");
+					 System.out.println("f.Skip the current quastion.");
+				     System.out.print("Choose correct answer: ");
+				     correct=sc.next();
+				     if(correct.equals("c"))
+				     {
+				    	 System.out.print("Your winning Amount is: ");
+					     System.out.println(amount+=20);
+				     System.out.println("Reaming Lifelines: "+lifeline);
+				     System.out.println("Go to next quastion");
+				     System.out.println("----------------------------------------------");
+					 System.out.println("----------------------------------------------");
+				     }
+				     else if(correct.equals("e"))
+				     {
+			    		 if(lifeline==2)
+			    		 {
+				    	 System.out.println("1.Audience");
+				    	 System.out.println("2.50/50");
+				    	   ans=sc.nextInt();
+				    	   if(ans==1)
+			      	    	  {
+				    		   System.out.println("Quastion 3");
+							     System.out.println("3.What is print statement in java?");
+							     System.out.println("a.System.out.Println();  20%");
+							     System.out.println("b.system.out.println();  30%");
+							     System.out.println("c.System.out.println();  60%");
+							     System.out.println("d.System.Out.println();  40%");
+							     lifeline--;
+							     audience--; 
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("c"))
+							     {
+							    	 System.out.print("Your winning Amount is: ");
+								     System.out.println(amount+=20);      
+							       System.out.println("Reaming Lifelines: "+lifeline);
+							       System.out.println("Go to next quastion");
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else
+							     {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("Reaming Lifelines: "+lifeline);
+							    	 System.out.print("Your winning Amount is: ");
+								     System.out.println(amount);
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	 }
+			      	    	else if(ans==2)
+			      	    	{
+			      	    		System.out.println("Quastion 3");
+							     System.out.println("3.What is print statement in java?");
+							     System.out.println("a.System.out.Println();");
+							     System.out.println("c.System.out.println();");
+							     lifeline--;
+							     fifty--;
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("c"))
+							     {
+							    	 System.out.print("Your winning Amount is: ");
+								     System.out.println(amount+=20);
+							       System.out.println("Reaming Lifelines: "+lifeline);
+							       System.out.println("Go to next quastion");
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else
+							     {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("Reaming Lifelines: "+lifeline);
+							    	 System.out.print("Your winning Amount is: ");
+								     System.out.println(amount);
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	}      
+				     }
+			    		 else if(lifeline==1) 
+			    		 {
+			    			 if(audience==1) 
+			    			 {
+			    			 System.out.println("1.Audience ");
+			    			 System.out.println("Quastion 3");
+						     System.out.println("3.What is print statement in java?");
+						     System.out.println("a.System.out.Println();  20%");
+						     System.out.println("b.system.out.println();  30%");
+						     System.out.println("c.System.out.println();  60%");
+						     System.out.println("d.System.Out.println();  40%");
+								     lifeline--;
+								     audience--;
+				      				System.out.print("Choose correct answer: ");
+								     correct=sc.next();
+								     if(correct.equals("c"))
+								     {
+								    	 System.out.print("Your winning Amount is: ");
+									     System.out.println(amount+=20);
+								       System.out.println("Reaming Lifelines: "+lifeline);
+								       System.out.println("Go to next quastion");
+								       System.out.println("----------------------------------------------");
+									   System.out.println("----------------------------------------------");
+								     }
+								     else
+								     {
+								    	 System.out.println("Sorry! wrong answer");
+								    	 System.out.println("!!! Thank you !!!");
+								    	 System.out.println("Reaming Lifelines: "+lifeline);
+								    	 System.out.print("Your winning Amount is: ");
+									     System.out.println(amount);
+								    	 System.out.println("----------------------------------------------");
+										 System.out.println("----------------------------------------------");
+								    	 System.exit(0);
+								     }
+				      	    	 
+			    			 }
+			    			 if(fifty==1)
+			    			 {
+			    				 System.out.println("2.50/50");
+			    				 System.out.println("Quastion 3");
+							     System.out.println("3.What is print statement in java?");
+							     System.out.println("a.System.out.Println();");
+							     System.out.println("c.System.out.println();");
+									     lifeline--;
+									     fifty--;
+					      				System.out.print("Choose correct answer: ");
+									     correct=sc.next();
+									     if(correct.equals("c"))
+									     {
+									    	 System.out.print("Your winning Amount is: ");
+										     System.out.println(amount+=20);
+									       System.out.println("Reaming Lifelines: "+lifeline);
+									       System.out.println("Go to next quastion");
+									       System.out.println("----------------------------------------------");
+										   System.out.println("----------------------------------------------");
+									     }
+									     else
+									     {
+									    	 System.out.println("Sorry! wrong answer");
+									    	 System.out.println("!!! Thank you !!!");
+									    	 System.out.println("Reaming Lifelines: "+lifeline);
+									    	 System.out.print("Your winning Amount is: ");
+										     System.out.println(amount);
+									    	 System.out.println("----------------------------------------------");
+											 System.out.println("----------------------------------------------");
+									    	 System.exit(0);
+									     }
+			    			 }
+			    		 }else if(lifeline==0) {
+			    			 System.out.println("There is no lifelines");
+			    			 System.out.print("Choose correct answer: ");
+						     correct=sc.next();
+						     if(correct.equals("c"))
+						     {
+						    	 System.out.print("Your winning Amount is: ");
+							     System.out.println(amount+=20);
+						       System.out.println("Reaming Lifelines: "+lifeline);
+						       System.out.println("Go to next quastion");
+						       System.out.println("----------------------------------------------");
+							   System.out.println("----------------------------------------------");
+						     }
+						     else
+						     {
+						    	 System.out.println("Sorry! wrong answer");
+						    	 System.out.println("!!! Thank you !!!");
+						    	 System.out.println("Reaming Lifelines: "+lifeline);
+						    	 System.out.print("Your winning Amount is: ");
+							     System.out.println(amount);
+						    	 System.out.println("----------------------------------------------");
+								 System.out.println("----------------------------------------------");
+						    	 System.exit(0);
+						     }
+			    		 }   
+			     }else if(correct.equals("f")) {
+			    	 System.out.println("Quastion Skiped");
+			    	 System.out.println("Go to next quastion.");
+			    	 System.out.println("----------------------------------------------");
+					  System.out.println("----------------------------------------------");
+			     }
+				     else
+				     {
+				    	 System.out.println("Sorry! wrong answer");
+				    	 System.out.println("!!! Thank you !!!");
+				    	 System.out.println("Reaming Lifelines: "+lifeline);
+				    	 System.out.print("Your Winning Amount is: ");
+					     System.out.println(amount);
+				    	 System.out.println("----------------------------------------------");
+						 System.out.println("----------------------------------------------");
+				    	 System.exit(0);
+				     }
+int d=4;
+				     System.out.println("Quastion 4");
+				     System.out.println("4.What is public in java?");
+				     System.out.println("a.visible");
+				     System.out.println("b.not a access modifer");
+				     System.out.println("c.access modifer");
+				     System.out.println("d.both a and c");
+				     System.out.println("e.Do you want to lifelines?");
+				     System.out.println("f.Skip the current quastion.");
+				     System.out.print("Choose correct answer: ");
+				     correct=sc.next();
+				     if(correct.equals("c"))
+				     {
+				    	 System.out.print("Your Winning Amount is: ");
+					     System.out.println(amount+=20);
+				     System.out.println("Reaming Lifelines: "+lifeline);
+				     System.out.println("Go to next quastion");
+				     System.out.println("----------------------------------------------");
+					 System.out.println("----------------------------------------------");
+				     }
+				     else if(correct.equals("e"))
+				     {
+			    		 if(lifeline==2)
+			    		 {
+				    	 System.out.println("1.Audience");
+				    	 System.out.println("2.50/50");
+				    	   ans=sc.nextInt();
+				    	   if(ans==1)
+			      	    	  {
+				    		   System.out.println("Quastion 4");
+			      	    		System.out.println("4.What is public in java?");
+			      	    		System.out.println("a.visible              40% ");
+			      	    		System.out.println("b.not a access modifer 20%");
+			      	    		System.out.println("c.access modifer       80%");
+			      	    		System.out.println("d.both a and c         10%");
+							     lifeline--;
+							     audience--; 
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("c"))
+							     {
+							    	 System.out.print("Your Winning Amount is: ");
+								     System.out.println(amount+=20);      
+							       System.out.println("Reaming Lifelines: "+lifeline);
+							       System.out.println("Go to next quastion");
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else
+							     {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("Reaming Lifelines: "+lifeline);
+							    	 System.out.print("Your Winning Amount is: ");
+								     System.out.println(amount);
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	 }
+			      	    	else if(ans==2)
+			      	    	{
+			      	    		System.out.println("Quastion 4");
+			      	    		System.out.println("4.What is public in java?");
+			      	    		System.out.println("a.visible");
+			      	    		System.out.println("c.access modifer");
+							     lifeline--;
+							     fifty--;
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("c"))
+							     {
+							       System.out.print("Your Winning Amount is: ");
+								     System.out.println(amount+=20);
+							       System.out.println("Reaming Lifelines: "+lifeline);
+							       System.out.println("Go to next quastion");
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else
+							     {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("Reaming Lifelines: "+lifeline);
+							    	 System.out.print("Your Winning Amount is: ");
+								     System.out.println(amount);
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	}      
+				     }
+			    		 else if(lifeline==1) 
+			    		 {
+			    			 if(audience==1) 
+			    			 {
+			    			 System.out.println("1.Audience ");
+			    			 System.out.println("Quastion 4");
+			      	    		System.out.println("4.What is public in java?");
+			      	    		System.out.println("a.visible              40% ");
+			      	    		System.out.println("b.not a access modifer 20%");
+			      	    		System.out.println("c.access modifer       80%");
+			      	    		System.out.println("d.both a and c         10%");
+							     lifeline--;
+								     audience--;
+				      				System.out.print("Choose correct answer: ");
+								     correct=sc.next();
+								     if(correct.equals("c"))
+								     {
+								    	 System.out.print("Your Winning Amount is: ");
+									     System.out.println(amount+=20);
+								       System.out.println("Reaming Lifelines: "+lifeline);
+								       System.out.println("Go to next quastion");
+								       System.out.println("----------------------------------------------");
+									   System.out.println("----------------------------------------------");
+								     }
+								     else
+								     {
+								    	 System.out.println("Sorry! wrong answer");
+								    	 System.out.println("!!! Thank you !!!");
+								    	 System.out.println("Reaming Lifelines: "+lifeline);
+								    	 System.out.print("Your Winning Amount is: ");
+									     System.out.println(amount);
+								    	 System.out.println("----------------------------------------------");
+										 System.out.println("----------------------------------------------");
+								    	 System.exit(0);
+								     }
+			    			 }
+			    			 if(fifty==1)
+			    			 {
+			    				 System.out.println("2.50/50");
+			    				 System.out.println("Quastion 4");
+				      	    		System.out.println("4.What is public in java?");
+				      	    		System.out.println("a.visible");
+				      	    		System.out.println("c.access modifer");
+								     lifeline--;
+									     fifty--;
+					      				System.out.print("Choose correct answer: ");
+									     correct=sc.next();
+									     if(correct.equals("c"))
+									     {
+									    	 System.out.print("Your Winning Amount is: ");
+										     System.out.println(amount+=20);
+									       System.out.println("Reaming Lifelines: "+lifeline);
+									       System.out.println("Go to next quastion");
+									       System.out.println("----------------------------------------------");
+										   System.out.println("----------------------------------------------");
+									     }
+									     else
+									     {
+									    	 System.out.println("Sorry! wrong answer");
+									    	 System.out.println("!!! Thank you !!!");
+									    	 System.out.println("Reaming Lifelines: "+lifeline);
+									    	 System.out.print("Your Winning Amount is: ");
+										     System.out.println(amount);
+									    	 System.out.println("----------------------------------------------");
+											 System.out.println("----------------------------------------------");
+									    	 System.exit(0);
+									     } 
+			    			 }
+			    		 }else if(lifeline==0) {
+			    			 System.out.println("There is no lifelines");
+			    			 System.out.print("Choose correct answer: ");
+						     correct=sc.next();
+						     if(correct.equals("c"))
+						     {
+						    	 System.out.print("Your Winning Amount is: ");
+							     System.out.println(amount+=20);
+						       System.out.println("Reaming Lifelines: "+lifeline);
+						       System.out.println("Go to next quastion");
+						       System.out.println("----------------------------------------------");
+							   System.out.println("----------------------------------------------");
+						     }
+						     else
+						     {
+						    	 System.out.println("Sorry! wrong answer");
+						    	 System.out.println("!!! Thank you !!!");
+						    	 System.out.println("Reaming Lifelines: "+lifeline);
+						    	 System.out.print("Your Winning Amount is: ");
+							     System.out.println(amount);
+						    	 System.out.println("----------------------------------------------");
+								 System.out.println("----------------------------------------------");
+						    	 System.exit(0);
+						     }
+			    		 }
+			     }
+				     else if(correct.equals("f")) {
+				    	 System.out.println("Quastion Skiped");
+				    	 System.out.println("Go to next quastion.");
+				    	 System.out.println("----------------------------------------------");
+						  System.out.println("----------------------------------------------");
+				     }
+				     else
+				     {
+				    	 System.out.println("Sorry! wrong answer");
+				    	 System.out.println("!!! Thank you !!!");
+				    	 System.out.println("Reaming Lifelines: "+lifeline);
+				    	 System.out.print("Your Winning Amount is: ");
+					     System.out.println(amount);
+				    	 System.out.println("----------------------------------------------");
+						 System.out.println("----------------------------------------------");
+				    	 System.exit(0);
+				     }
+int k=5;
+				     System.out.println("Quastion 5");
+				     System.out.println("5.What is function keyword in java?");
+				     System.out.println("a.voidd");
+				     System.out.println("b.void");
+				     System.out.println("c.only a");
+				     System.out.println("d.both a and c");
+				     System.out.println("e.Do you want to lifelines?");
+				     System.out.println("f.Skip the current quastion.");
+				     System.out.print("Choose correct answer: ");
+				     correct=sc.next();
+				     if(correct.equals("b")){
+				    	 System.out.print("Your Winning Amount is: ");
+					     System.out.println(amount+=20);
+				     System.out.println("Reaming Lifelines: "+lifeline);
+				     System.out.println("Go to next quastion");
+				     System.out.println("----------------------------------------------");
+					 System.out.println("----------------------------------------------");
+				     }
+				     
+				     else if(correct.equals("e"))
+				     {
+			    		 if(lifeline==2)
+			    		 {
+				    	 System.out.println("1.Audience");
+				    	 System.out.println("2.50/50");
+				    	   ans=sc.nextInt();
+				    	   if(ans==1)
+			      	    	  {
+				    		   System.out.println("Quastion 5");
+							     System.out.println("5.What is function keyword in java?");
+							     System.out.println("a.voidd         70%");
+							     System.out.println("b.void          80%");
+							     System.out.println("c.only a        50%");
+							     System.out.println("d.both a and c  30%");  	
+							     lifeline--;
+							     audience--; 
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("b"))
+							     {
+							    	 System.out.print("Your Winning Amount is: ");
+								     System.out.println(amount+=20);
+							       System.out.println("Reaming Lifelines: "+lifeline);
+							       System.out.println("Go to next quastion");
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else
+							     {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("Reaming Lifelines: "+lifeline);
+							    	 System.out.print("Your Winning Amount is: ");
+								     System.out.println(amount);
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	 }
+			      	    	else if(ans==2)
+			      	    	{
+			      	    		System.out.println("Quastion 5");
+							     System.out.println("5.What is function keyword in java?");
+							     System.out.println("a.voidd");
+							     System.out.println("b.void");
+							     lifeline--;
+							     fifty--;
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("b"))
+							     {
+							    	 System.out.print("Your Winning Amount is: ");
+								     System.out.println(amount+=20);
+							       System.out.println("Reaming Lifelines: "+lifeline);
+							       System.out.println("Go to next quastion");
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else
+							     {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("Reaming Lifelines: "+lifeline);
+							    	 System.out.print("Your Winning Amount is: ");
+								     System.out.println(amount);
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	}      
+				     }
+			    		 else if(lifeline==1) 
+			    		 {
+			    			 if(audience==1) 
+			    			 {
+			    			 System.out.println("1.Audience ");
+			    			 System.out.println("Quastion 5");
+						     System.out.println("5.What is function keyword in java?");
+						     System.out.println("a.voidd         70%");
+						     System.out.println("b.void          80%");
+						     System.out.println("c.only a        50%");
+						     System.out.println("d.both a and c  30%");  	
+						     lifeline--;
+								     audience--;
+				      				System.out.print("Choose correct answer: ");
+								     correct=sc.next();
+								     if(correct.equals("b"))
+								     {
+								    	 System.out.print("Your Winning Amount is: ");
+									     System.out.println(amount+=20);
+								       System.out.println("Reaming Lifelines: "+lifeline);
+								       System.out.println("Go to next quastion");
+								       System.out.println("----------------------------------------------");
+									   System.out.println("----------------------------------------------");
+								     }
+								     else
+								     {
+								    	 System.out.println("Sorry! wrong answer");
+								    	 System.out.println("!!! Thank you !!!");
+								    	 System.out.println("Reaming Lifelines: "+lifeline);
+								    	 System.out.print("Your Winning Amount is: ");
+									     System.out.println(amount);
+								    	 System.out.println("----------------------------------------------");
+										 System.out.println("----------------------------------------------");
+								    	 System.exit(0);
+								     }
+			    			 }
+			    			 if(fifty==1)
+			    			 {
+			    				 System.out.println("2.50/50");
+			    				 System.out.println("Quastion 5");
+							     System.out.println("5.What is function keyword in java?");
+							     System.out.println("a.voidd");
+							     System.out.println("b.void");
+							     lifeline--;
+									     fifty--;
+					      				System.out.print("Choose correct answer: ");
+									     correct=sc.next();
+									     if(correct.equals("b"))
+									     {
+									    	 System.out.print("Your Winning Amount is: ");
+										     System.out.println(amount+=20);   
+									       System.out.println("Reaming Lifelines: "+lifeline);
+									       System.out.println("Go to next quastion");
+									       System.out.println("----------------------------------------------");
+										   System.out.println("----------------------------------------------");
+									     }
+									     else
+									     {
+									    	 System.out.println("Sorry! wrong answer");
+									    	 System.out.println("!!! Thank you !!!");
+									    	 System.out.println("Reaming Lifelines: "+lifeline);
+									    	 System.out.print("Your Winning Amount is: ");
+										     System.out.println(amount);
+									    	 System.out.println("----------------------------------------------");
+											 System.out.println("----------------------------------------------");
+									    	 System.exit(0);
+									     }
+			    			 }
+			    		 }else if(lifeline==0) {
+			    			 System.out.println("There is no lifelines");
+			    			 System.out.print("Choose correct answer: ");
+						     correct=sc.next();
+						     if(correct.equals("b"))
+						     {
+						    	 System.out.print("Your Winning Amount is: ");
+							     System.out.println(amount+=20);
+						       System.out.println("Reaming Lifelines: "+lifeline);
+						       System.out.println("Go to next quastion");
+						       System.out.println("----------------------------------------------");
+							   System.out.println("----------------------------------------------");
+						     }
+						     else
+						     {
+						    	 System.out.println("Sorry! wrong answer");
+						    	 System.out.println("!!! Thank you !!!");
+						    	 System.out.println("Reaming Lifelines: "+lifeline);
+						    	 System.out.print("Your Winning Amount is: ");
+							     System.out.println(amount);
+						    	 System.out.println("----------------------------------------------");
+								 System.out.println("----------------------------------------------");
+						    	 System.exit(0);
+						     }
+			    		 }   
+			     }
+				     else if(correct.equals("f")) {
+				    	 System.out.println("Quastion Skiped");
+				    	 System.out.println("Go to next quastion.");
+				    	 System.out.println("----------------------------------------------");
+						  System.out.println("----------------------------------------------");
+				     }
+				     else
+				     {
+				    	 System.out.println("Sorry! wrong answer");
+				    	 System.out.println("!!! Thank you !!!");
+				    	 System.out.println("Reaming Lifelines: "+lifeline);
+				    	 System.out.print("Your Winning Amount is: ");
+					     System.out.println(amount);
+				    	 System.out.println("----------------------------------------------");
+						 System.out.println("----------------------------------------------");
+				    	 System.exit(0);
+				     }
+int f=6;
+				     System.out.println("Quastion 6");
+				     System.out.println("6.Who invented Java Programming?");
+				     System.out.println("a.Guido van Rossum");
+				     System.out.println("b.James Gosling");
+				     System.out.println("c.Dennis Ritchie");
+				     System.out.println("d.Bjarne Stroustrup");
+				     System.out.println("e.Do you want to lifelines?");
+				     System.out.println("f.Skip the current quastion.");
+				     System.out.print("Choose correct answer: ");
+				     correct=sc.next();
+				     if(correct.equals("b")){
+				    	 System.out.print("Your Winng Amount is: ");
+					     System.out.println(amount+=20);
+				     System.out.println("reaming lifelines: "+lifeline);
+				     System.out.println("Go to next quastion");
+				     System.out.println("----------------------------------------------");
+					 System.out.println("----------------------------------------------");
+				     }
+				     else if(correct.equals("e"))
+				     {
+			    		 if(lifeline==2)
+			    		 {
+				    	 System.out.println("1.Audience");
+				    	 System.out.println("2.50/50");
+				    	   ans=sc.nextInt();
+				    	   if(ans==1)
+			      	    	  {
+				    		   System.out.println("Quastion 6");
+							     System.out.println("6.Who invented Java Programming?");
+							     System.out.println("a.Guido van Rossum   50%");
+							     System.out.println("b.James Gosling      70%");
+							     System.out.println("c.Dennis Ritchie     30%");
+							     System.out.println("d.Bjarne Stroustrup  10%");
+							     lifeline--;
+							     audience--; 
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("b"))
+							     {
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount+=20);	      
+							       System.out.println("reaming lifelines: "+lifeline);
+							       System.out.println("Go to next quastion");
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else
+							     {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("reaming lifelines: "+lifeline);
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount);
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	 }
+			      	    	else if(ans==2)
+			      	    	{
+			      	    		System.out.println("Quastion 6");
+							     System.out.println("6.Who invented Java Programming?");
+							     System.out.println("a.Guido van Rossum");
+							     System.out.println("b.James Gosling");		
+							     lifeline--;
+							     fifty--;
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("b"))
+							     {
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount+=20);
+							       System.out.println("reaming lifelines: "+lifeline);
+							       System.out.println("Go to next quastion");
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else
+							     {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("reaming lifelines: "+lifeline);
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount);
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	}      
+				     }
+			    		 else if(lifeline==1) 
+			    		 {
+			    			 if(audience==1) 
+			    			 {
+			    			 System.out.println("1.Audience ");
+			    			 
+			    			 System.out.println("Quastion 6");
+						     System.out.println("6.Who invented Java Programming?");
+						     System.out.println("a.Guido van Rossum   50%");
+						     System.out.println("b.James Gosling      70%");
+						     System.out.println("c.Dennis Ritchie     30%");
+						     System.out.println("d.Bjarne Stroustrup  10%");
+						     lifeline--;
+								     audience--;
+				      				System.out.print("Choose correct answer: ");
+								     correct=sc.next();
+								     if(correct.equals("b"))
+								     {
+								    	 System.out.print("Your Winng Amount is: ");
+									     System.out.println(amount+=20);
+								       System.out.println("reaming lifelines: "+lifeline);
+								       System.out.println("Go to next quastion");
+								       System.out.println("----------------------------------------------");
+									   System.out.println("----------------------------------------------");
+								     }
+								     else
+								     {
+								    	 System.out.println("Sorry! wrong answer");
+								    	 System.out.println("!!! Thank you !!!");
+								    	 System.out.println("reaming lifelines: "+lifeline);
+								    	 System.out.print("Your Winng Amount is: ");
+									     System.out.println(amount);
+								    	 System.out.println("----------------------------------------------");
+										 System.out.println("----------------------------------------------");
+								    	 System.exit(0);
+								     }
+			    			 }
+			    			 if(fifty==1)
+			    			 {
+			    				 System.out.println("2.50/50");
+			    				 System.out.println("Quastion 6");
+							     System.out.println("6.Who invented Java Programming?");
+							     System.out.println("a.Guido van Rossum");
+							     System.out.println("b.James Gosling");		
+							     lifeline--;
+									     fifty--;
+					      				System.out.print("Choose correct answer: ");
+									     correct=sc.next();
+									     if(correct.equals("b"))
+									     {
+									    	 System.out.print("Your Winng Amount is: ");
+										     System.out.println(amount+=20);   
+									       System.out.println("reaming lifelines: "+lifeline);
+									       System.out.println("Go to next quastion");
+									       System.out.println("----------------------------------------------");
+										   System.out.println("----------------------------------------------");
+									     }
+									     else
+									     {
+									    	 System.out.println("Sorry! wrong answer");
+									    	 System.out.println("!!! Thank you !!!");
+									    	 System.out.println("reaming lifelines: "+lifeline);
+									    	 System.out.print("Your Winng Amount is: ");
+										     System.out.println(amount);
+									    	 System.out.println("----------------------------------------------");
+											 System.out.println("----------------------------------------------");
+									    	 System.exit(0);
+									     } 
+			    			 }
+			    		 }else if(lifeline==0) {
+			    			 System.out.println("There is no lifelines");
+			    			 System.out.print("Choose correct answer: ");
+						     correct=sc.next();
+						     if(correct.equals("b"))
+						     {
+						    	 System.out.print("Your Winng Amount is: ");
+							     System.out.println(amount+=20);
+						       System.out.println("reaming lifelines: "+lifeline);
+						       System.out.println("Go to next quastion");
+						       System.out.println("----------------------------------------------");
+							   System.out.println("----------------------------------------------");
+						     }
+						     else
+						     {
+						    	 System.out.println("Sorry! wrong answer");
+						    	 System.out.println("!!! Thank you !!!");
+						    	 System.out.println("reaming lifelines: "+lifeline);
+						    	 System.out.print("Your Winng Amount is: ");
+							     System.out.println(amount);
+						    	 System.out.println("----------------------------------------------");
+								 System.out.println("----------------------------------------------");
+						    	 System.exit(0);
+						     }
+			    		 }
+			     }
+				     else if(correct.equals("f")) {
+				    	 System.out.println("Quastion Skiped");
+				    	 System.out.println("Go to next quastion.");
+				    	 System.out.println("----------------------------------------------");
+						  System.out.println("----------------------------------------------");
+				     }
+				     else
+				     {
+				    	 System.out.println("Sorry! wrong answer");
+				    	 System.out.println("!!! Thank you !!!");
+				    	 System.out.println("reaming lifelines: "+lifeline);
+				    	 System.out.print("Your Winng Amount is: ");
+					     System.out.println(amount);
+				    	 System.out.println("----------------------------------------------");
+						 System.out.println("----------------------------------------------");
+				    	 System.exit(0);
+				     }    
+int g=7;
+				     System.out.println("Quastion 7");
+				     System.out.println("7.Which statement is true about Java?");
+				     System.out.println("a.Java is a sequence-dependent programming language");
+				     System.out.println("b.Java is a code dependent programming language");
+				     System.out.println("c.Java is a platform-dependent programming language");
+				     System.out.println("d.Java is a platform-independent programming language");
+				     System.out.println("e.Do you want to lifelines?");
+				     System.out.println("f.Skip the current quastion.");
+				     System.out.print("Choose correct answer: ");
+				     correct=sc.next();
+				     if(correct.equals("d")){
+				    	 System.out.print("Your Winng Amount is: ");
+					     System.out.println(amount+=20);
+				     System.out.println("reaming lifelines: "+lifeline);
+				     System.out.println("Go to next quastion");
+				     System.out.println("----------------------------------------------");
+					 System.out.println("----------------------------------------------");
+				     }
+				     else if(correct.equals("e"))
+				     {
+			    		 if(lifeline==2)
+			    		 {
+				    	 System.out.println("1.Audience");
+				    	 System.out.println("2.50/50");
+				    	   ans=sc.nextInt();
+				    	   if(ans==1)
+			      	    	  {
+				    		   System.out.println("Quastion 7");
+							     System.out.println("7.Which statement is true about Java?");
+							     System.out.println("a.Java is a sequence-dependent programming language     10%");
+							     System.out.println("b. Java is a code dependent programming language        20%");
+							     System.out.println("c.Java is a platform-dependent programming language     30%");
+							     System.out.println("d. Java is a platform-independent programming language  60%");
+							     lifeline--;
+							     audience--; 
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("d"))
+							     {
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount+=20);	      
+							       System.out.println("reaming lifelines: "+lifeline);
+							       System.out.println("Go to next quastion");
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else
+							     {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("reaming lifelines: "+lifeline);
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount);
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	 }
+			      	    	else if(ans==2)
+			      	    	{
+			      	    		System.out.println("Quastion 7");
+							     System.out.println("7.Which statement is true about Java?");
+							     System.out.println("c.Java is a platform-dependent programming language     ");
+							     System.out.println("d. Java is a platform-independent programming language  ");
+							     lifeline--;
+							     fifty--;
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("d"))
+							     {
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount+=20);
+							       System.out.println("reaming lifelines: "+lifeline);
+							       System.out.println("Go to next quastion");
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else
+							     {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("reaming lifelines: "+lifeline);
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount);
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	}      
+				     }
+			    		 else if(lifeline==1) 
+			    		 {
+			    			 if(audience==1) 
+			    			 {
+			    			 System.out.println("1.Audience ");
+			    			 System.out.println("Quastion 7");
+						     System.out.println("7.Which statement is true about Java?");
+						     System.out.println("a.Java is a sequence-dependent programming language     10%");
+						     System.out.println("b. Java is a code dependent programming language        20%");
+						     System.out.println("c.Java is a platform-dependent programming language     30%");
+						     System.out.println("d. Java is a platform-independent programming language  60%");
+						     lifeline--;
+								     audience--;
+				      				System.out.print("Choose correct answer: ");
+								     correct=sc.next();
+								     if(correct.equals("d"))
+								     {
+								    	 System.out.print("Your Winng Amount is: ");
+									     System.out.println(amount+=20);
+								       System.out.println("reaming lifelines: "+lifeline);
+								       System.out.println("Go to next quastion");
+								       System.out.println("----------------------------------------------");
+									   System.out.println("----------------------------------------------");
+								     }
+								     else
+								     {
+								    	 System.out.println("Sorry! wrong answer");
+								    	 System.out.println("!!! Thank you !!!");
+								    	 System.out.println("reaming lifelines: "+lifeline);
+								    	 System.out.print("Your Winng Amount is: ");
+									     System.out.println(amount);
+								    	 System.out.println("----------------------------------------------");
+										 System.out.println("----------------------------------------------");
+								    	 System.exit(0);
+								     }
+				      	    	 
+			    			 }
+			    			 if(fifty==1)
+			    			 {
+			    				 System.out.println("2.50/50");
+			    				 System.out.println("Quastion 7");
+							     System.out.println("7.Which statement is true about Java?");
+							     System.out.println("c.Java is a platform-dependent programming language     ");
+							     System.out.println("d. Java is a platform-independent programming language  ");
+							     lifeline--;
+									     fifty--;
+					      				System.out.print("Choose correct answer: ");
+									     correct=sc.next();
+									     if(correct.equals("d"))
+									     {
+									    	 System.out.print("Your Winng Amount is: ");
+										     System.out.println(amount+=20);
+									       System.out.println("reaming lifelines: "+lifeline);
+									       System.out.println("Go to next quastion");
+									       System.out.println("----------------------------------------------");
+										   System.out.println("----------------------------------------------");
+									     }
+									     else
+									     {
+									    	 System.out.println("Sorry! wrong answer");
+									    	 System.out.println("!!! Thank you !!!");
+									    	 System.out.println("reaming lifelines: "+lifeline);
+									    	 System.out.print("Your Winng Amount is: ");
+										     System.out.println(amount);
+									    	 System.out.println("----------------------------------------------");
+											 System.out.println("----------------------------------------------");
+									    	 System.exit(0);
+									     } 
+			    			 }
+			    		 }else if(lifeline==0) {
+			    			 System.out.println("There is no lifelines");
+			    			 System.out.print("Choose correct answer: ");
+						     correct=sc.next();
+						     if(correct.equals("d"))
+						     {
+						    	 System.out.print("Your Winng Amount is: ");
+							     System.out.println(amount+=20);
+						       System.out.println("reaming lifelines: "+lifeline);
+						       System.out.println("Go to next quastion");
+						       System.out.println("----------------------------------------------");
+							   System.out.println("----------------------------------------------");
+						     }
+						     else
+						     {
+						    	 System.out.println("Sorry! wrong answer");
+						    	 System.out.println("!!! Thank you !!!");
+						    	 System.out.println("reaming lifelines: "+lifeline);
+						    	 System.out.print("Your Winng Amount is: ");
+							     System.out.println(amount);
+						    	 System.out.println("----------------------------------------------");
+								 System.out.println("----------------------------------------------");
+						    	 System.exit(0);
+						     }
+			    		 }
+			     }
+				     else if(correct.equals("f")) {
+				    	 System.out.println("Quastion Skiped");
+				    	 System.out.println("Go to next quastion.");
+				    	 System.out.println("----------------------------------------------");
+						  System.out.println("----------------------------------------------");
+				     }
+				     else
+				     {
+				    	 System.out.println("Sorry! wrong answer");
+				    	 System.out.println("!!! Thank you !!!");
+				    	 System.out.println("reaming lifelines: "+lifeline);
+				    	 System.out.print("Your Winng Amount is: ");
+					     System.out.println(amount);
+				    	 System.out.println("----------------------------------------------");
+						 System.out.println("----------------------------------------------");
+				    	 System.exit(0);
+				     }    
+int o=8;
+				     System.out.println("Quastion 8");
+				     System.out.println("8.Which component is used to compile, debug and execute the java programs?");
+				     System.out.println("a.JRE");
+				     System.out.println("b.JIT");
+				     System.out.println("c.JDK");
+				     System.out.println("d.JVM");
+				     System.out.println("e.Do you want to lifelines?");
+				     System.out.println("f.Skip the current quastion.");
+				     System.out.print("Choose correct answer: ");
+				     correct=sc.next();
+				     if(correct.equals("c")){
+				    	 System.out.print("Your Winng Amount is: ");
+					     System.out.println(amount+=20);
+				     System.out.println("reaming lifelines: "+lifeline);
+				     System.out.println("Go to next quastion");
+				     System.out.println("----------------------------------------------");
+					 System.out.println("----------------------------------------------");
+				     }
+				     
+				     else if(correct.equals("e"))
+				     {
+			    		 if(lifeline==2)
+			    		 {
+				    	 System.out.println("1.Audience");
+				    	 System.out.println("2.50/50");
+				    	   ans=sc.nextInt();
+				    	   if(ans==1)
+			      	    	  {
+				    		   System.out.println("Quastion 8");
+							     System.out.println("8.Which component is used to compile, debug and execute the java programs?");
+							     System.out.println("a.JRE  40%");
+							     System.out.println("b. JIT 20%");
+							     System.out.println("c.JDK  70%");
+							     System.out.println("d. JVM 50%");
+							     lifeline--;
+							     audience--; 
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("c"))
+							     {
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount+=20);
+							       System.out.println("reaming lifelines: "+lifeline);
+							       System.out.println("Go to next quastion");
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else
+							     {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("reaming lifelines: "+lifeline);
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount);
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	 }
+			      	    	else if(ans==2)
+			      	    	{
+			      	    		System.out.println("Quastion 8");
+							     System.out.println("8.Which component is used to compile, debug and execute the java programs?");
+							     System.out.println("a.JRE");
+							     System.out.println("c.JDK");
+							     lifeline--;
+							     fifty--;
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("c"))
+							     {
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount+=20);
+							       System.out.println("reaming lifelines: "+lifeline);
+							       System.out.println("Go to next quastion");
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else
+							     {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("reaming lifelines: "+lifeline);
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount);
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	}      
+				     }
+			    		 else if(lifeline==1) 
+			    		 {
+			    			 if(audience==1) 
+			    			 {
+			    			 System.out.println("1.Audience ");
+			    			 System.out.println("Quastion 8");
+						     System.out.println("8.Which component is used to compile, debug and execute the java programs?");
+						     System.out.println("a.JRE  40%");
+						     System.out.println("b. JIT 20%");
+						     System.out.println("c.JDK  70%");
+						     System.out.println("d. JVM 50%");
+						     lifeline--;
+								     audience--;
+				      				System.out.print("Choose correct answer: ");
+								     correct=sc.next();
+								     if(correct.equals("c"))
+								     {
+								    	 System.out.print("Your Winng Amount is: ");
+									     System.out.println(amount+=20);
+								       System.out.println("reaming lifelines: "+lifeline);
+								       System.out.println("Go to next quastion");
+								       System.out.println("----------------------------------------------");
+									   System.out.println("----------------------------------------------");
+								     }
+								     else
+								     {
+								    	 System.out.println("Sorry! wrong answer");
+								    	 System.out.println("!!! Thank you !!!");
+								    	 System.out.println("reaming lifelines: "+lifeline);
+								    	 System.out.print("Your Winng Amount is: ");
+									     System.out.println(amount);
+								    	 System.out.println("----------------------------------------------");
+										 System.out.println("----------------------------------------------");
+								    	 System.exit(0);
+								     }
+			    			 }
+			    			 if(fifty==1)
+			    			 {
+			    				 System.out.println("2.50/50");
+			    				 System.out.println("Quastion 8");
+							     System.out.println("8.Which component is used to compile, debug and execute the java programs?");
+							     System.out.println("a.JRE");
+							     System.out.println("c.JDK");
+							     lifeline--;
+									     fifty--;
+					      				System.out.print("Choose correct answer: ");
+									     correct=sc.next();
+									     if(correct.equals("c"))
+									     {
+									    	 System.out.print("Your Winng Amount is: ");
+										     System.out.println(amount+=20);  
+									       System.out.println("reaming lifelines: "+lifeline);
+									       System.out.println("Go to next quastion");
+									       System.out.println("----------------------------------------------");
+										   System.out.println("----------------------------------------------");
+									     }
+									     else
+									     {
+									    	 System.out.println("Sorry! wrong answer");
+									    	 System.out.println("!!! Thank you !!!");
+									    	 System.out.println("reaming lifelines: "+lifeline);
+									    	 System.out.print("Your Winng Amount is: ");
+										     System.out.println(amount);
+									    	 System.out.println("----------------------------------------------");
+											 System.out.println("----------------------------------------------");
+									    	 System.exit(0);
+									     } 
+			    			 }
+			    		 }else if(lifeline==0) {
+			    			 System.out.println("There is no lifelines");
+			    			 System.out.print("Choose correct answer: ");
+						     correct=sc.next();
+						     if(correct.equals("c"))
+						     {
+						    	 System.out.print("Your Winng Amount is: ");
+							     System.out.println(amount+=20);
+						       System.out.println("reaming lifelines: "+lifeline);
+						       System.out.println("Go to next quastion");
+						       System.out.println("----------------------------------------------");
+							   System.out.println("----------------------------------------------");
+						     }
+						     else
+						     {
+						    	 System.out.println("Sorry! wrong answer");
+						    	 System.out.println("!!! Thank you !!!");
+						    	 System.out.println("reaming lifelines: "+lifeline);
+						    	 System.out.print("Your Winng Amount is: ");
+							     System.out.println(amount);
+						    	 System.out.println("----------------------------------------------");
+								 System.out.println("----------------------------------------------");
+						    	 System.exit(0);
+						     }
+			    		 }
+			     }
+				     else if(correct.equals("f")) {
+				    	 System.out.println("Quastion Skiped");
+				    	 System.out.println("Go to next quastion.");
+				    	 System.out.println("----------------------------------------------");
+						  System.out.println("----------------------------------------------");
+				     }
+				     else
+				     {
+				    	 System.out.println("Sorry! wrong answer");
+				    	 System.out.println("!!! Thank you !!!");
+				    	 System.out.println("reaming lifelines: "+lifeline);
+				    	 System.out.print("Your Winng Amount is: ");
+					     System.out.println(amount);
+				    	 System.out.println("----------------------------------------------");
+						 System.out.println("----------------------------------------------");
+				    	 System.exit(0);
+				     } 
+int i=9;
+				     System.out.println("Quastion 9");
+				     System.out.println("9.Which one of the following is not a Java feature?");
+				     System.out.println("a.Object-Oriented");
+				     System.out.println("b.Use of pointers");
+				     System.out.println("c.Portable");
+				     System.out.println("d.Dynamic and Extensible");
+				     System.out.println("e.Do you want to lifelines?");
+				     System.out.println("f.Skip the current quastion.");
+				     System.out.print("Choose correct answer: ");
+				     correct=sc.next();
+				     if(correct.equals("b")){
+				    	 System.out.print("Your Winng Amount is: ");
+					     System.out.println(amount+=20);
+				     System.out.println("reaming lifelines: "+lifeline);
+				     System.out.println("Go to next quastion");
+				     System.out.println("----------------------------------------------");
+					 System.out.println("----------------------------------------------");
+				     }
+				     else if(correct.equals("e"))
+				     {
+			    		 if(lifeline==2)
+			    		 {
+				    	 System.out.println("1.Audience");
+				    	 System.out.println("2.50/50");
+				    	   ans=sc.nextInt();
+				    	   if(ans==1)
+			      	    	  {
+				    		   System.out.println("Quastion 9");
+							     System.out.println("9.Which one of the following is not a Java feature?");
+							     System.out.println("a.Object-Oriented         60%");
+							     System.out.println("b.Use of pointers         80%");
+							     System.out.println("c.Portable                40%");
+							     System.out.println("d.Dynamic and Extensible  20%");
+							     lifeline--;
+							     audience--; 
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("b"))
+							     {
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount+=20);	      
+							       System.out.println("reaming lifelines: "+lifeline);
+							       System.out.println("Go to next quastion");
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else
+							     {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("reaming lifelines: "+lifeline);
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount);
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	 }
+			      	    	else if(ans==2)
+			      	    	{
+			      	    		System.out.println("Quastion 9");
+							     System.out.println("9.Which one of the following is not a Java feature?");
+							     System.out.println("a.Object-Oriented");
+							     System.out.println("b.Use of pointers");  
+							     lifeline--;
+							     fifty--;
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("b"))
+							     {
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount+=20);
+							       System.out.println("reaming lifelines: "+lifeline);
+							       System.out.println("Go to next quastion");
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else
+							     {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("reaming lifelines: "+lifeline);
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount);
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	}      
+				     }
+			    		 else if(lifeline==1) 
+			    		 {
+			    			 if(audience==1) 
+			    			 {
+			    			 System.out.println("1.Audience ");
+			    			 System.out.println("Quastion 9");
+						     System.out.println("9.Which one of the following is not a Java feature?");
+						     System.out.println("a.Object-Oriented         60%");
+						     System.out.println("b.Use of pointers         80%");
+						     System.out.println("c.Portable                40%");
+						     System.out.println("d.Dynamic and Extensible  20%");
+						     lifeline--;
+								     audience--;
+				      				System.out.print("Choose correct answer: ");
+								     correct=sc.next();
+								     if(correct.equals("b"))
+								     {
+								    	 System.out.print("Your Winng Amount is: ");
+									     System.out.println(amount+=20);
+								       System.out.println("reaming lifelines: "+lifeline);
+								       System.out.println("Go to next quastion");
+								       System.out.println("----------------------------------------------");
+									   System.out.println("----------------------------------------------");
+								     }
+								     else
+								     {
+								    	 System.out.println("Sorry! wrong answer");
+								    	 System.out.println("!!! Thank you !!!");
+								    	 System.out.println("reaming lifelines: "+lifeline);
+								    	 System.out.print("Your Winng Amount is: ");
+									     System.out.println(amount);
+								    	 System.out.println("----------------------------------------------");
+										 System.out.println("----------------------------------------------");
+								    	 System.exit(0);
+								     }
+			    			 }
+			    			 if(fifty==1)
+			    			 {
+			    				 System.out.println("2.50/50");
+			    				 System.out.println("Quastion 9");
+							     System.out.println("9.Which one of the following is not a Java feature?");
+							     System.out.println("a.Object-Oriented");
+							     System.out.println("b.Use of pointers");  
+							     lifeline--;
+									     fifty--;
+					      				System.out.print("Choose correct answer: ");
+									     correct=sc.next();
+									     if(correct.equals("b"))
+									     {
+									       System.out.print("Your Winng Amount is: ");
+										     System.out.println(amount+=20);  
+									       System.out.println("reaming lifelines: "+lifeline);
+									       System.out.println("Go to next quastion");
+									       System.out.println("----------------------------------------------");
+										   System.out.println("----------------------------------------------");
+									     }
+									     else
+									     {
+									    	 System.out.println("Sorry! wrong answer");
+									    	 System.out.println("!!! Thank you !!!");
+									    	 System.out.println("reaming lifelines: "+lifeline);
+									    	 System.out.print("Your Winng Amount is: ");
+										     System.out.println(amount);
+									    	 System.out.println("----------------------------------------------");
+											 System.out.println("----------------------------------------------");
+									    	 System.exit(0);
+									     } 
+			    			 }
+			    		 }else if(lifeline==0) {
+			    			 System.out.println("There is no lifelines");
+			    			 System.out.print("Choose correct answer: ");
+						     correct=sc.next();
+						     if(correct.equals("b"))
+						     {
+						    	 System.out.print("Your Winng Amount is: ");
+							     System.out.println(amount+=20);
+						       System.out.println("reaming lifelines: "+lifeline);
+						       System.out.println("Go to next quastion");
+						       System.out.println("----------------------------------------------");
+							   System.out.println("----------------------------------------------");
+						     }
+						     else
+						     {
+						    	 System.out.println("Sorry! wrong answer");
+						    	 System.out.println("!!! Thank you !!!");
+						    	 System.out.println("reaming lifelines: "+lifeline);
+						    	 System.out.print("Your Winng Amount is: ");
+							     System.out.println(amount);
+						    	 System.out.println("----------------------------------------------");
+								 System.out.println("----------------------------------------------");
+						    	 System.exit(0);
+						     }
+			    		 }
+			     }
+				     else if(correct.equals("f")) {
+				    	 System.out.println("Quastion Skiped");
+				    	 System.out.println("Go to next quastion.");
+				    	 System.out.println("----------------------------------------------");
+						 System.out.println("----------------------------------------------");
+				     }
+				     else
+				     {
+				    	 System.out.println("Sorry! wrong answer");
+				    	 System.out.println("!!! Thank you !!!");
+				    	 System.out.println("reaming lifelines: "+lifeline);
+				    	 System.out.print("Your Winng Amount is: ");
+					     System.out.println(amount);
+				    	 System.out.println("----------------------------------------------");
+						 System.out.println("----------------------------------------------");
+				    	 System.exit(0);
+				     } 
+				     
+int j=10;
+				     System.out.println("Quastion 10");
+				     System.out.println("10.Which of these cannot be used for a variable name in Java?");
+				     System.out.println("a.identifier & keyword");
+				     System.out.println("b.identifier");
+				     System.out.println("c.keyword");
+				     System.out.println("d.none of the above"); 
+				     System.out.println("e.Do you want to lifelines?");
+				     System.out.println("f. Skip the current quastion.");
+				     System.out.print("Choose correct answer: ");
+				     correct=sc.next();
+				     if(correct.equals("c")){
+				    	 System.out.print("Your Winng Amount is: ");
+					     System.out.println(amount+=20);
+				     System.out.println("reaming lifelines: "+lifeline);
+				     System.out.println("!!! Congratulations my dear !!!");
+				     System.out.println("----------------------------------------------");
+					 System.out.println("----------------------------------------------");
+				     }
+				     
+				     else if(correct.equals("e"))
+				     {
+			    		 if(lifeline==2)
+			    		 {
+				    	 System.out.println("1.Audience");
+				    	 System.out.println("2.50/50");
+				    	   ans=sc.nextInt();
+				    	   if(ans==1)
+			      	    	  {
+				    		   System.out.println("Quastion 10");
+							     System.out.println("10.Which of these cannot be used for a variable name in Java?");
+							     System.out.println("a.identifier & keyword  20%");
+							     System.out.println("b.identifier            70%");
+							     System.out.println("c.keyword               90%");
+							     System.out.println("d.none of the above     40%");
+							     lifeline--;
+							     audience--; 
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("c"))
+							     {
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount+=20);
+							       System.out.println("reaming lifelines: "+lifeline);
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else
+							     {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("reaming lifelines: "+lifeline);
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount);
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	 }
+			      	    	else if(ans==2)
+			      	    	{
+			      	    		System.out.println("Quastion 10");
+							     System.out.println("10.Which of these cannot be used for a variable name in Java?");
+							     System.out.println("b.identifier");
+							     System.out.println("c.keyword");
+							     lifeline--;
+							     fifty--;
+			      				System.out.print("Choose correct answer: ");
+							     correct=sc.next();
+							     if(correct.equals("c"))
+							     {
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount+=20);
+							       System.out.println("reaming lifelines: "+lifeline);
+							       System.out.println("----------------------------------------------");
+								   System.out.println("----------------------------------------------");
+							     }
+							     else
+							     {
+							    	 System.out.println("Sorry! wrong answer");
+							    	 System.out.println("!!! Thank you !!!");
+							    	 System.out.println("reaming lifelines: "+lifeline);
+							    	 System.out.print("Your Winng Amount is: ");
+								     System.out.println(amount);
+							    	 System.out.println("----------------------------------------------");
+									 System.out.println("----------------------------------------------");
+							    	 System.exit(0);
+							     }
+			      	    	}      
+				     }
+			    		 else if(lifeline==1) 
+			    		 {
+			    			 if(audience==1) 
+			    			 {
+			    			 System.out.println("1.Audience ");
+			    			 System.out.println("Quastion 10");
+						     System.out.println("10.Which of these cannot be used for a variable name in Java?");
+						     System.out.println("a.identifier & keyword  20%");
+						     System.out.println("b.identifier            70%");
+						     System.out.println("c.keyword               90%");
+						     System.out.println("d.none of the above     40%");
+						     lifeline--;
+								     audience--;
+				      				System.out.print("Choose correct answer: ");
+								     correct=sc.next();
+								     if(correct.equals("c"))
+								     {
+								    	 System.out.print("Your Winng Amount is: ");
+									     System.out.println(amount+=20);
+								       System.out.println("reaming lifelines: "+lifeline);
+								       System.out.println("----------------------------------------------");
+									   System.out.println("----------------------------------------------");
+								     }
+								     else
+								     {
+								    	 System.out.println("Sorry! wrong answer");
+								    	 System.out.println("!!! Thank you !!!");
+								    	 System.out.println("reaming lifelines: "+lifeline);
+								    	 System.out.print("Your Winng Amount is: ");
+									     System.out.println(amount);
+								    	 System.out.println("----------------------------------------------");
+										 System.out.println("----------------------------------------------");
+								    	 System.exit(0);
+								     }
+			    			 }
+			    			 if(fifty==1)
+			    			 {
+			    				 System.out.println("2.50/50");
+			    				 System.out.println("Quastion 10");
+							     System.out.println("10.Which of these cannot be used for a variable name in Java?");
+							     System.out.println("b.identifier");
+							     System.out.println("c.keyword");
+							     lifeline--;
+									     fifty--;
+					      				System.out.print("Choose correct answer: ");
+									     correct=sc.next();
+									     if(correct.equals("c"))
+									     {
+									    	 System.out.print("Your Winng Amount is: ");
+										     System.out.println(amount+=20);   
+									       System.out.println("reaming lifelines: "+lifeline);
+									       System.out.println("----------------------------------------------");
+										   System.out.println("----------------------------------------------");
+									     }
+									     else
+									     {
+									    	 System.out.println("Sorry! wrong answer");
+									    	 System.out.println("!!! Thank you !!!");
+									    	 System.out.println("reaming lifelines: "+lifeline);
+									    	 System.out.print("Your Winng Amount is: ");
+										     System.out.println(amount);
+									    	 System.out.println("----------------------------------------------");
+											 System.out.println("----------------------------------------------");
+									    	 System.exit(0);
+									     } 
+			    			 }
+			    		 }else if(lifeline==0) {
+			    			 System.out.println("There is no lifelines");
+			    			 System.out.print("Choose correct answer: ");
+						     correct=sc.next();
+						     if(correct.equals("c"))
+						     {
+						    	 System.out.print("Your Winng Amount is: ");
+							     System.out.println(amount+=20);
+						       System.out.println("reaming lifelines: "+lifeline);
+						       System.out.println("----------------------------------------------");
+							   System.out.println("----------------------------------------------");
+						     }
+						     else
+						     {
+						    	 System.out.println("Sorry! wrong answer");
+						    	 System.out.println("!!! Thank you !!!");
+						    	 System.out.println("reaming lifelines: "+lifeline);
+						    	 System.out.print("Your Winng Amount is: ");
+							     System.out.println(amount);
+						    	 System.out.println("----------------------------------------------");
+								 System.out.println("----------------------------------------------");
+						    	 System.exit(0);
+						     }
+			    		 }   
+			     }
+				     else if(correct.equals("f")) {
+				    	 System.out.println("Quastion Skiped");
+				    	 System.out.println("Go to next quastion.");
+				    	 System.out.println("----------------------------------------------");
+						 System.out.println("----------------------------------------------");
+				     }
+				     else
+				     {
+				    	 System.out.println("Sorry! wrong answer");
+				    	 System.out.println("!!! Thank you !!!");
+				    	 System.out.println("reaming lifelines: "+lifeline);
+				    	 System.out.print("Your Winng Amount is: ");
+					     System.out.println(amount);
+				    	 System.out.println("----------------------------------------------");
+						 System.out.println("----------------------------------------------");
+				    	 System.exit(0);
+				     }
+				    System.out.println("*  *  *  *  *  *  *  *  *  *  *   *  **");
+				    System.out.println("                                       ");
+				    System.out.println("*                                     *");
+				    System.out.println("              Certificate              ");
+				    System.out.println("*                                     *");
+				    System.out.println("               "+name);
+				    System.out.println("*                                     *");
+				    System.out.print("        Your Winning Amount is: ");
+				    System.out.println(amount);
+				    System.out.println("*                                     *");
+				    System.out.println("                                       ");
+				    System.out.println("*                                     *");
+				    System.out.println("  Thank You My Dear,For Participating. ");
+				    System.out.println("*                                     *");
+				    System.out.println("                                       ");
+				    System.out.println("*  *  *  *  *  *  *  *  *  *  *  *  * *");
+				 
+
+		    }	  
+		  else
+		    {
+			  System.out.println("!!! Thank You My Dear, For Participating. !!!");
+		      System.exit(0);
+		    }		
+		}catch(Exception e) {
+			System.out.println("!!!------- My Dear, Pleas Enter Valued Input.Refresh it. -------!!!");
+		}
+	}
+}
+
+Package Participent.java;
+public class Participent {
+	public static void main(String[] args) {
+		Quastions q=new Quastions();
+		q.start();
+	} 
+}
